@@ -7,8 +7,9 @@ class PageHero extends React.Component {
   render() {
     return (
     <Parallaximg imgsrc={bgimg} height="100%" width="100%" opacity="0.5" className="back"> 
-    <div className="w-full h-screen page-hero">
-    </div>
+    {/* <div className="w-full h-screen page-hero"> */}
+    <img src={bgimg} alt=" " className="w-full h-screen page-hero"/>
+    {/* </div> */}
     </Parallaximg> 
    
     );
