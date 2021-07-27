@@ -1,0 +1,24 @@
+h1{
+    color:#fff;
+    align-content: center;
+    padding-top: 50px;
+}
+.aboutus{
+    background-color: #ac8f69;
+    height: 500px;
+}
+.aboutus p{
+    font-size:xx-large;
+    vertical-align: middle;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 80px;
+    color: #fff;
+}
+
+.Intro-section{
+    margin-top: 300px;
+}
+
+.tryit{
+    transform: skewX(25deg);
+}

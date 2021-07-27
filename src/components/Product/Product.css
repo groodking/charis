@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap'); */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    float: center;
+    max-width: 1700px !important;
+    padding-left: 90px;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;  
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.5); */
+  /* border-left: 1px solid rgba(255, 255, 255, 0.5); */
+    overflow: hidden;
+    /* backdrop-filter: blur(5px); */
+    padding: 0;
+    margin-bottom: 30px;
+    margin-left: -15px;
+}
+
+.tilt{
+    width: 250px !important;
+    height: 400px !important;
+    padding: 0px !important;
+    margin-top: 20px !important;
+    /* margin-left: -100px !important; */
+}
+.abc{
+    margin-right: -1px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* .card:hover::before {
+    top: -60%;
+    transform: skewY(390deg);
+} */
+
+.card::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBx {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+.card .imgBx img {
+    width: 75%;
+    height: 100%;
+    transition: transform .2s;
+}
+
+.card .imgBx img:hover{
+    /* max-width: 70%; */
+    transform: scale(1.2);
+    margin: 0 auto;
+
+}
+
+.fa-cart-plus,.fa-heart{
+    color: #9b8055;
+    transition: transform .2s;
+}
+.fa-cart-plus:hover, .fa-heart:hover{
+    transform: scale(1.5);
+}
+
+.productlink{
+    text-decoration: none !important;
+}
+.card .contextBx {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.prod_name{
+    margin-bottom: 20px;
+}
+
+.card .contextBx h3 {
+    font-size: 18px;
+    color: #e35d60;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card .contextBx .price {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.original_price{
+    color: #f38282;
+    text-decoration-line: line-through;
+}
+
+.card .contextBx .buy {
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 30px;
+    text-decoration: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card .contextBx  {
+    top: 0;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(100px);
+}
+
+.card:hover .contextBx  {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Icons-section{
+    margin-top: 30px;
+    width: 300px;
+}
+.fa-heart{
+    margin-left: -40px;
+}
+.fa-cart-plus{
+    margin-left: -60px;
+}
+@media (max-width:992px){
+    .card{
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width:1200px){
+    .card{
+        margin-bottom: 20px;
+    }
+    .abc{
+        margin-right: -9px;
+        margin-left: -4px;
+    }
+    .Icons-section{
+        margin-top: 40px;
+    }
+    .fa-heart{
+        margin-left: 110px;
+    }
+    .row{
+        align-items: center;
+        max-width:1300px !important;
+    }
+}
+
+@media (max-width:769px){
+    .abc,.card{
+        margin-right: 8px;
+        margin-left: -8px;
+    }
+}
+@media (max-width:376px){
+    .card{
+        margin-left: 25px;
+    }
+}
+
+/* @media (max-width:321px){
+    .card{
+        margin-left: 25px;
+        margin-right: -30px;
+        align-content:center;
+        width: 250px;
+        height: 300px;
+        align-items: center; 
+     }
+    .fa-heart{
+        margin-left: 80px;
+    }
+
+} */ 
