@@ -6,8 +6,8 @@ import './Header.css';
 class PageHero extends React.Component {
   render() {
     return (
-    <Parallaximg imgsrc={bgimg} height="1000px" width="100%" opacity="0.5" className="back"> 
-     <div className="w-full h-screen page-hero">
+    <Parallaximg imgsrc={bgimg} height="100%" width="100%" opacity="0.5" className="back"> 
+    <div className="w-full h-screen page-hero">
     </div>
     </Parallaximg> 
    

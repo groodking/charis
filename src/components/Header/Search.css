@@ -44,7 +44,7 @@ body {
   display: flex;
   border-radius: 100px;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 49vw !important;
   overflow: hidden;
   font-size: 1.25em;
   position: relative;
@@ -88,7 +88,7 @@ body {
 }
 
 .search:focus-within {
-  width: 20vw;
+  width: 30vw;
 }
 
 .search:focus-within .search__input {
@@ -109,5 +109,14 @@ body {
   outline: 0;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+}
+
+@media (max-width:1025px){
+.search{
+  margin-left: 48vw !important;
+}
+.search:focus-within{
+  width:40vw;
+}
 }
 /*# sourceMappingURL=Search.css.map */

@@ -7,9 +7,10 @@ export default function Parallaximg(props) {
         justifyContent:"center",
         alignItems:"center",
         height:"100%",
+        width:"100%",
         color: "#ffffff",
         backgroundColor:'rgba(0,0,0,.4)'
-        // WebkitFilter: 'blur(0px) saturate(2)'
+        // WebkitFilter: 'blur(0px) saturate(10)'
     }
     return (
         <ParallaxBanner 
