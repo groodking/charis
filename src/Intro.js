@@ -3,7 +3,7 @@ import Header from './components/Header/Header.js';
 import Footer from './components/Footer/Footer';
 import Product from './components/Product/Product';
 import Sliderfeature from './components/Featured/Sliderfeature';
-import {ParallaxProvider} from 'react-scroll-parallax';
+// import {ParallaxProvider} from 'react-scroll-parallax';
 import PageHero from './components/Header/PageHero.js';
 // import Parallaximg from './Parallaximg';
 import Parallaxsection from './Parallaxsection';
@@ -15,12 +15,13 @@ import "./intro.css";
 class Intro extends React.Component  {
       render(){
     return (
-        <ParallaxProvider>
+        // <ParallaxProvider>
+        <>
         <Header/>
         <PageHero/>
         <Product/>
         <Sliderfeature/>
-        <Parallaxsection height="500px" className="abcd">
+        <div height="500px" className="abcd">
             <div align="center" className="aboutus">
                 <h1>About Us</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,seddo eiusmod tempor incididunt ut laboreetdolore magna 
@@ -28,9 +29,10 @@ class Intro extends React.Component  {
                 aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
                 occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-        </Parallaxsection>
+        </div>
         <Footer/>
-        </ParallaxProvider>
+        </>
+        // </ParallaxProvider>
     )
 }
 }

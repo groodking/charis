@@ -11,7 +11,6 @@ import { useScroll } from "../../useScroll";
 
  export default function Navbar() {
   const { y, x, scrollDirection } = useScroll(); 
-
   const styles = {
     active: {
       visibility: "visible",
