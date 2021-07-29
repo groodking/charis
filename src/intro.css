@@ -2,6 +2,7 @@ h1{
     color:#fff;
     align-content: center;
     padding-top: 50px;
+    padding-bottom: 20px;
 }
 .aboutus{
     background-color: #ac8f69;
@@ -10,15 +11,16 @@ h1{
 .aboutus p{
     font-size:xx-large;
     vertical-align: middle;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    line-height: 80px;
+    font-family:Georgia, 'Times New Roman', serif;
+    line-height: 60px;
     color: #fff;
-}
 
+}
+.inner{
+    width: 95%;
+    padding-top: 20px;
+}
 .Intro-section{
     margin-top: 300px;
 }
 
-.tryit{
-    transform: skewX(25deg);
-}
