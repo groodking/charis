@@ -9,9 +9,9 @@ import Tilt from 'react-vanilla-tilt';
 
 export default function Product() {
     return (
-        <div>
-            <div className="container">
-                <div className="row">
+        <div className="container">
+            <h1 className="Productheading">Featured Products</h1>
+                <div className="row rows">
                 <Tilt className="tilt" options={{Speed:1000, max:1000, reverse:true, scale:100}}>
                     <div className="col-xl-2 col-lg-4 col-md-6 col-sm-6 abc">
                     
@@ -137,7 +137,7 @@ export default function Product() {
                         </div>
                     </div>
                     </Tilt>
-                    <Tilt className="tilt">
+                    {/* <Tilt className="tilt">
                     <div className="col-xl-2 col-lg-4 col-md-6 col-sm-6 abc">
                         <div className="card" align="center">
                             <Link to="/Product/ProductPage" className="productlink">
@@ -198,9 +198,8 @@ export default function Product() {
                             </div>
                         </div>
                     </div>
-                    </Tilt>
+                    </Tilt> */}
                 </div>
-            </div>
         </div>
         
     );

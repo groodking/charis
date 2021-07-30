@@ -10,9 +10,10 @@
     max-width: 100% !important;
     /* backdrop-filter: blur(20px) !important;  */
 }
-.row{
+.rows{
     justify-content: center;
-    
+    gap:6rem !important;
+    padding-bottom: 40px;
 }
 body {
     min-height: 100vh;
@@ -21,6 +22,11 @@ body {
     align-items: center;
     background:white !important; 
     /* backdrop-filter: blur(20px) !important;  */
+}
+.Productheading{
+    color:#000000;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 .card {
     position: relative;
@@ -155,15 +161,15 @@ body {
 
 .card .contextBx  {
     top: 0;
-    opacity: 0;
-    transition: 0.3s;
-    transform: translateY(100px);
+    opacity: 1;
+    /* transition: 0.3s; */
+    /* transform: translateY(100px); */
 }
 
-.card:hover .contextBx  {
+/* .card:hover .contextBx  {
     opacity: 1;
     transform: translateY(0px);
-}
+} */
 
 .Icons-section{
     margin-top: 30px;

@@ -2,9 +2,10 @@ import React from 'react';
 import Header from './components/Header/Header.js';
 import Footer from './components/Footer/Footer';
 import Product from './components/Product/Product';
-import Sliderfeature from './components/Featured/Sliderfeature';
+import CategorySlider from './components/Featured/CategorySlider';
+import About from './components/About Us/About.js';
 // import {ParallaxProvider} from 'react-scroll-parallax';
-import PageHero from './components/Header/PageHero.js';
+// import PageHero from './components/Header/PageHero.js';
 // import Parallaximg from './Parallaximg';
 // import Parallaxsection from './Parallaxsection';
 // import bgimg from ".././src/assets/background.png";
@@ -16,24 +17,16 @@ class Intro extends React.Component  {
       render(){
     return (
         // <ParallaxProvider>
-        <>
+        <div>
         <Header/>
-        <PageHero/>
+        <CategorySlider/>
+        {/* <PageHero/> */}
         <Product/>
-        <Sliderfeature/>
         {/* <div height="500px" className="abcd "> */}
-            <div align="center" className="aboutus container">
-                <div className="inner">
-                <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,seddo eiusmod tempor incididunt ut laboreetdolore magna 
-                aliqua.Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
-                aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
+        <About/>
         {/* </div> */}
         <Footer/>
-        </>
+        </div>
         // </ParallaxProvider>
     )
 }

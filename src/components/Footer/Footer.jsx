@@ -4,10 +4,8 @@ import logo from "../../assets/logo.png";
 
 function Footer() {
   return (
-    <div className="footer-start">
-      <div>
-      <footer data-component="footer">
-      <div className="container-fluid feature" align="left">
+    <footer className="container feature" align="left">
+      {/* <div className="container feature" align="left"> */}
         <div className="row">
           <div className="col-sm-3 footer-logo-box">
             <img src={logo} alt="logo"/>
@@ -66,12 +64,9 @@ function Footer() {
 
 </div>
 
-</div>
+{/* // </div> */}
       </footer>
-      </div>
       );
-    </div>
-  );
 }
 
 export default Footer;

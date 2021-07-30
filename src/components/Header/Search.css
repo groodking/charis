@@ -39,7 +39,7 @@ body {
 
 .search {
   --size: 50px;
-  border: 2px solid var(--clr-primary);
+  border: 2px solid var(--clr-body);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +74,7 @@ body {
   cursor: pointer;
 }
 .search__input[placeholder]{
-  color: green !important;
+  color: #000 !important;
 }
 .search__submit {
   font-size: 1.5rem;
@@ -91,7 +91,7 @@ body {
 }
 
 .search:focus-within {
-  width: 30vw;
+  width: 40vw;
 }
 
 .search:focus-within .search__input {

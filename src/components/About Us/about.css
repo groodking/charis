@@ -1,0 +1,24 @@
+h1{
+    color:#fff;
+    align-content: center;
+    padding-top: 50px;
+    font-weight: bold !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+}
+.aboutus{
+    background-color: #ac8f69;
+    height: 500px;
+}
+.aboutus p{
+    font-size:30px;
+    vertical-align: middle;
+    font-family:Georgia, 'Times New Roman', serif;
+    line-height: 50px;
+    color: #fff;
+
+}
+.inner{
+    width: 100% !important;
+    /* padding-top: 20px; */
+}

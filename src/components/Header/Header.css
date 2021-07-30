@@ -13,11 +13,11 @@
   max-width: 100%;
 }
 .logoimg{
-  flex-basis: 25%;
+  flex-basis: 15%;
 }
 .Navbar img {
   width: 65%;
-  padding-left: 70px;
+  /* padding-left: 70px; */
 }
 
 .Navbar .log {
@@ -28,12 +28,13 @@
   background-color:white;
 }
 .container{
-  width:500%;
+  width:100%;
+  /* border: 5px solid blue !important; */
 }
 .Navbar {
   background-color: white;
-  width: 100%;
-  height: 110px;
+  width: 92%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,6 +43,7 @@
   left:0;
   z-index: 100;
   padding: 1em 2em;
+  /* border: 3px solid blue !important; */
 }
 .Navbar--hidden {
   transform: translateY(-110px);
@@ -53,9 +55,18 @@
 nav ul{
   display: flex;
   list-style: none;
-  gap: 0.2em;
   padding-top: 10px;
-  padding-right: 70px !important;
+  /* padding-right: 70px !important; */
+  gap: 2.5em !important;
+}
+nav ul a, nav ul a:hover{
+  color: #000;
+}
+.cartlink, .cartlink:hover{
+  color:#00008b;
+}
+.fa-bars{
+  margin-left: -15px;
 }
 .page-hero{
   transition: 0s linear;
@@ -69,7 +80,18 @@ nav ul{
   height:100vh;
   /* position: absolute; */
 } 
+.icons{
+  color:#000;
+  /* column-gap: 0px; */
+  gap:0;
+  padding-right: 0 !important;
+  /* border:3px solid #000; */
 
+}
+
+.iconss{
+  padding-top: 5px !important;
+}
 .navbar-collapse{
   position: absolute !important;
   top:110px !important;
@@ -79,8 +101,9 @@ nav ul{
   -moz-transition:    all 0.1s ease-in !important;
   -o-transition:      all 0.1s ease-in !important;
 }
-.sss{
-  justify-self: center;
+.search{
+  position: absolute;
+left: 0 !important;
 }
 
 .buy_prod:hover{
@@ -89,6 +112,11 @@ text-decoration:underline;
 }
  .buy_prod{
   color: black;
+  }
+
+  .ham{
+    padding-top: 10px !important;
+    padding-right: 0;
   }
   
 .navbar-nav {
@@ -137,35 +165,14 @@ text-decoration:underline;
 }
 
 
-/* .text-wrapper {
-  text-align: center;
-} */
-
-/* .headline {
-  font-size: 15rem;
-  color: blueviolet;
-  font-weight: 100;
-  line-height: 0.5;
-}
-
-.headline::first-letter {
-  font-size: 20rem;
-}
-
-.sub-headline {
-  font-size: 10rem;
-  text-transform: uppercase;
-  color: white;
-} */
-
-
-@media (max-width:769px){
-  .Navbar{
-    padding-right: 0px !important;
-    padding-left: 0 !important;
+@media (max-width:927px){
+  nav ul{
+    /* padding-right: 10px !important; */
+    margin-right: 0 !important;
+    gap:2.5em !important;
   }
-  .Navbar img{
-    width: 140% !important;
+  .logoimg{
+    flex-basis: 20%;
   }
 }
 @media (max-width:1025px){
@@ -177,28 +184,36 @@ text-decoration:underline;
     width: 100%;
   }
 }
-@media (max-width:426px){
-  .Navbar{
-    width: 480px;
-  }
-
+@media (max-width:579px){
   .logoimg{
-    flex-basis: 35%;
-    margin-left: -40px;
+    flex-basis: 25% !important;
+    /* margin-left: -40px; */
   }
   nav ul{
-    padding-right: 10px !important;
+    /* padding-right: 10px !important; */
+    gap:1em !important;
+    margin-right: 10px !important;
   }
 }
-@media (max-width:376px){
-  .Navbar{
-    width:450px;
+@media (max-width:460.5px){
+  .logoimg{
+    flex-basis: 30% !important;
+    /* margin-left: -40px; */
   }
+}
+@media (max-width:361px){
+  nav ul{
+    /* padding-right: 10px !important; */
+    gap:1em !important;
+  }
+  .logoimg{
+    flex-basis: 34% !important;
+  }
+} 
 
-}
-@media (max-width:321px){
+@media(max-width:622px){
   .Navbar{
-    width:424px;
+    width: 100%;
   }
 }
 
