@@ -15,7 +15,7 @@ export default function CategorySlider() {
     const [selectedmain, setselectedFirst] = useState(img1)
     const [selectedback, setselectedback] = useState('#e6d7c3')
     return (
-        <div className="container">
+        <div className="container containerss">
             <div className="row slider_row" style={{background:selectedback}}>
                 <div className="col-lg-6 Img_Description">
                     <h1 className="mav">Jute bag</h1>

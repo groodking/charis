@@ -29,7 +29,8 @@
 }
 .container{
   width:100%;
-  /* border: 5px solid blue !important; */
+  /* padding-left: 0 !important; */
+  /* border: 2px solid blue !important; */
 }
 .Navbar {
   background-color: white;
@@ -216,4 +217,3 @@ text-decoration:underline;
     width: 100%;
   }
 }
-

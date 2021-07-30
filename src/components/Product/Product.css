@@ -162,14 +162,8 @@ body {
 .card .contextBx  {
     top: 0;
     opacity: 1;
-    /* transition: 0.3s; */
-    /* transform: translateY(100px); */
 }
 
-/* .card:hover .contextBx  {
-    opacity: 1;
-    transform: translateY(0px);
-} */
 
 .Icons-section{
     margin-top: 30px;
@@ -197,5 +191,11 @@ body {
 @media(max-width:393px){
     .Productheading{
         padding-left: 25vw !important;
+    }
+}
+
+@media(max-width:310px){
+    .Productheading{
+        padding-left: 46vw !important;
     }
 }

@@ -285,3 +285,10 @@
         top:-140px;
     }
 }
+
+@media(max-width:380px){
+    .containerss{
+      padding-left: 0px !important;
+    }
+  }
+  
