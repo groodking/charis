@@ -181,3 +181,21 @@ body {
 .fa-cart-plus{
     margin-left: -60px;
 }
+
+@media (max-width: 635.5px){
+    .Productheading{
+        padding-left: 6vw !important;
+    }
+}
+
+@media (max-width: 362px){
+    .Productheading{
+        padding-left: 8vw !important;
+    }
+}
+
+@media(max-width:393px){
+    .Productheading{
+        padding-left: 25vw !important;
+    }
+}

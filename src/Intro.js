@@ -23,7 +23,7 @@ class Intro extends React.Component  {
         {/* <PageHero/> */}
         <Product/>
         {/* <div height="500px" className="abcd "> */}
-        <About/>
+        {/* <About/> */}
         {/* </div> */}
         <Footer/>
         </div>

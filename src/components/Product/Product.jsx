@@ -9,7 +9,7 @@ import Tilt from 'react-vanilla-tilt';
 
 export default function Product() {
     return (
-        <div className="container">
+        <div className="container prodcont">
             <h1 className="Productheading">Featured Products</h1>
                 <div className="row rows">
                 <Tilt className="tilt" options={{Speed:1000, max:1000, reverse:true, scale:100}}>
