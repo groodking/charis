@@ -5,6 +5,7 @@
 }
 .mav_descp{
     font-size: 1.2rem;
+    color: #000;
 }
 
 .more_info{
@@ -35,7 +36,7 @@
 .slider_list{
     list-style: none;
     display: flex;
-    border: 3px solid;
+    /* border: 3px solid; */
     margin-left: -500px;
     margin-right: 400px;
     gap:3px;
@@ -276,8 +277,4 @@
     .slider_list{
         left: 550px !important;
     }   
-}
-
-@media(max-width:281px){
-    
 }
