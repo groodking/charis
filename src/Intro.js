@@ -19,13 +19,13 @@ class Intro extends React.Component  {
         // <ParallaxProvider>
         <div>
         <Header/>
-//         <CategorySlider/>
+        <CategorySlider/>
         {/* <PageHero/> */}
-//         <Product/>
+        <Product/>
         {/* <div height="500px" className="abcd "> */}
         {/* <About/> */}
         {/* </div> */}
-//         <Footer/>
+        <Footer/>
         </div>
         // </ParallaxProvider>
     )
