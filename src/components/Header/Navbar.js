@@ -11,20 +11,22 @@ export default class Navbar extends Component {
   constructor(props) {
     super(props);
 
+    this.listener = null;
     this.state = {
       prevScrollpos: window.pageYOffset,
-      visible: true
+      visible: true,
+      navBackground: "transparent"
     };
   }
 
-  // Adds an event listener when the component is mount.
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("scroll",     this.handleColor);
+    window.addEventListener("scroll",     this.handleScroll);
   }
 
-  // Remove the event listener when the component is unmount.
+
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener("scroll",this.handleScroll );
   }
 
   // Hide or show the menu.
@@ -39,14 +41,28 @@ export default class Navbar extends Component {
       visible
     });
   };
+
+  handleColor= () => {
+    const backgroundcolor = window.scrollY < 70 ? "transparent" : "white";
+
+    this.setState({ navBackground: backgroundcolor });
+  };
+
   render(){
   return (
-         <nav className={classnames("Navbar", "container",{
+    <>
+         <nav className="Navbar">
+      <div className={classnames("Navbar-container",{
           "Navbar--hidden": !this.state.visible
         },
         {
           "Navbar--show": this.state.visible
-        })}>
+        },
+        )}
+        style={{
+            backgroundColor: `${this.state.navBackground}`,
+            transition: '0.156s'
+          }}>
       <div className="logoimg"><a href="/charis"><img src={logo} alt="logo.png"/></a></div>
       <ul className="icons">
       <a href="/charis"><li className="iconss"><i className ="phones fa fa-mobile fa-lg" aria-hidden="true"></i></li></a>
@@ -73,7 +89,9 @@ export default class Navbar extends Component {
           </li> */}
           </ul>
         </div>
+        </div>
       </nav>
+    </>
   )
 }
 }

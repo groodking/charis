@@ -15,7 +15,7 @@ export default function CategorySlider() {
     const [selectedmain, setselectedFirst] = useState(img1)
     const [selectedback, setselectedback] = useState('#e6d7c3')
     return (
-        <div className="container containerss">
+        <div className="container containers">
             <div className="row slider_row" style={{background:selectedback}}>
                 <div className="col-lg-6 Img_Description">
                     <h1 className="mav">Jute bag</h1>
@@ -24,16 +24,18 @@ export default function CategorySlider() {
                 </div>
                 <div className="col-lg-6">
                     <img src={selectedmain} alt=" " className="Main_Im"/>
+                </div>
+                <div className="col-lg-12 col-md col-sm col-xs" align="center">
                     <ul className="slider_list">
-                    <li className="items"data-text="bag1" onClick={() => {setselectedFirst(img1); setselectedback('#e6d7c3');}}><img src={img1} alt=" "/></li>
-                    <li className="items"data-text="bag2" onClick={() => {setselectedFirst(img2); setselectedback('#efeae1');}}><img src={img2} alt=" "/></li>
-                    <li className="items"data-text="bag3" onClick={() => {setselectedFirst(img3); setselectedback('#d0bb50');}}><img src={img3} alt=" "/></li>
-                    <li className="items"data-text="bag4" onClick={() => {setselectedFirst(img4); setselectedback('#947652');}}><img src={img4}  alt=" "/></li>
-                    <li className="items"data-text="bag5" onClick={() => {setselectedFirst(img5); setselectedback('#c4bbb0');}}><img src={img5}  alt=" "/></li>
-                    <li className="items"data-text="bag6" onClick={() => {setselectedFirst(img6); setselectedback('#a2b44f');}}><img src={img6}  alt=" "/></li>
-                    <li className="items"data-text="bag7" onClick={() => {setselectedFirst(img7); setselectedback('#e8e2e5');}}><img src={img7}  alt=" "/></li>
-                    <li className="items"data-text="bag8" onClick={() => {setselectedFirst(img8); setselectedback('#decfbf');}}><img src={img8}  alt=" "/></li>
-                    <li className="items"data-text="bag9" onClick={() => {setselectedFirst(img9); setselectedback('#c2a78a');}}><img src={img9}  alt=" "/></li>
+                    <li className="items" data-text="bag1" onClick={() => {setselectedFirst(img1); setselectedback('#e6d7c3');}}><img src={img1} alt=" "/></li>
+                    <li className="items" data-text="bag2" onClick={() => {setselectedFirst(img2); setselectedback('#efeae1');}}><img src={img2} alt=" "/></li>
+                    <li className="items" data-text="bag3" onClick={() => {setselectedFirst(img3); setselectedback('#d0bb50');}}><img src={img3} alt=" "/></li>
+                    <li className="items" data-text="bag4" onClick={() => {setselectedFirst(img4); setselectedback('#947652');}}><img src={img4}  alt=" "/></li>
+                    <li className="items" data-text="bag5" onClick={() => {setselectedFirst(img5); setselectedback('#c4bbb0');}}><img src={img5}  alt=" "/></li>
+                    <li className="items" data-text="bag6" onClick={() => {setselectedFirst(img6); setselectedback('#a2b44f');}}><img src={img6}  alt=" "/></li>
+                    <li className="items" data-text="bag7" onClick={() => {setselectedFirst(img7); setselectedback('#e8e2e5');}}><img src={img7}  alt=" "/></li>
+                    <li className="items" data-text="bag8" onClick={() => {setselectedFirst(img8); setselectedback('#decfbf');}}><img src={img8}  alt=" "/></li>
+                    <li className="items" data-text="bag9" onClick={() => {setselectedFirst(img9); setselectedback('#c2a78a');}}><img src={img9}  alt=" "/></li>
                     </ul>
                 </div>
             </div>

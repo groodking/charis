@@ -1,1 +1,14 @@
 *{scroll-behavior: smooth;}
+
+.test{ background-color:#e6d7c3 ; 
+    width: 100%;    
+    height:55vh;  
+    z-index: -100;
+    margin-top: -80px;
+}
+
+
+.test1{background-color:#e6d7c3 ; width: 100%;    height:55vh; }
+.test2{background-color:#e6d7c3 ; width: 100%;    height:55vh; }
+.test3{background-color:#e6d7c3 ; width: 100%;    height:55vh; }
+.test4{background-color:#e6d7c3 ; width: 100%;    height:55vh; }

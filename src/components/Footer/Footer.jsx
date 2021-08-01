@@ -5,7 +5,6 @@ import logo from "../../assets/logo.png";
 function Footer() {
   return (
     <footer className="container feature" align="left">
-      {/* <div className="container feature" align="left"> */}
         <div className="row">
           <div className="col-sm-3 footer-logo-box">
             <img src={logo} alt="logo"/>
@@ -34,7 +33,7 @@ function Footer() {
           <div className="col-sm-3">
             <ul>
               <li><h4>Contact Us</h4></li>
-              <li className="footer-icon-box"><i className="fa fa-envelope fa-1x footer-icon fa-inverse" aria-hidden="true"></i><a href='mailto:abc@gmail.com'>abc@gmail.com</a></li>
+              <li className="footer-icon-box"><i className="fa fa-envelope fa-1x footer-icon fa-inverse" aria-hidden="true"></i><a href='mailto:abc@gmail.com'>CS@gmail.com</a></li>
               <li className="footer-icon-box"><i className="fa fa-phone fa-1x footer-icon fa-inverse" aria-hidden="true"></i><a href='tel:9876543210'>9876543210</a></li>
               <li className="footer-icon-box"><i className="fa fa-map-marker fa-1x footer-icon fa-inverse" aria-hidden="true"></i><a href='!#'>Chennai</a></li>
               <li className="footer-icon-box2">If you have any queries feel free to <a href="!#" className="btn btn-primary btn-sm active" role="button" aria-pressed="true">CONTACT US</a></li>
@@ -63,8 +62,6 @@ function Footer() {
   </div>
 
 </div>
-
-{/* // </div> */}
       </footer>
       );
 }

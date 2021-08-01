@@ -11,6 +11,7 @@ import About from './components/About Us/About.js';
 // import bgimg from ".././src/assets/background.png";
 // import img1 from ".././src/assets/img1.png";
 // import bg2 from ".././src/assets/background-triangles.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./intro.css";
 
 class Intro extends React.Component  {
@@ -19,13 +20,28 @@ class Intro extends React.Component  {
         // <ParallaxProvider>
         <div>
         <Header/>
-        <CategorySlider/>
+        {/* <div className="container"> */}
+        {/* <div> */}
+            <CategorySlider/>
+            <Product/> 
+            <About/> 
+            <Footer/> 
+            {/* <div className="test4"></div> */}
+        {/* </div> */}
+        {/* <div className="test1"></div>
+        <div className="test2"></div>
+        <div className="test3"></div>
+        <div className="test4"></div>
+        <div className="test4"></div> */}
+        {/* </div> */}
+        {/* <div className="test4"></div> */}
+        
         {/* <PageHero/> */}
-        <Product/>
+        {/* <Product/> */}
         {/* <div height="500px" className="abcd "> */}
         {/* <About/> */}
         {/* </div> */}
-        <Footer/>
+        {/* <Footer/> */}
         </div>
         // </ParallaxProvider>
     )
