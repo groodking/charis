@@ -18,7 +18,7 @@ h1{
     font-family:Georgia, 'Times New Roman', serif;
     line-height: 45px;
     color: #fff;
-    /* padding-top: 10%; */
+    margin-bottom:0px !important;
 
 }
 .aboutt{
